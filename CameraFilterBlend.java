@@ -30,9 +30,6 @@ public class CameraFilterBlend extends BaseFilter {
 
     public CameraFilterBlend() {
         positionTexture2 = -1;
-        if (texture2==null) {
-            texture2 = Bitmap.createBitmap(200, 200, Bitmap.Config.ARGB_8888);
-        }
     }
     private Bitmap texture2;
     private int positionTexture2;
