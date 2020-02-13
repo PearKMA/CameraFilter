@@ -101,4 +101,10 @@ public class CameraFilterBlend extends BaseFilter {
     public void setBlendTexture(Bitmap bitmap) {
         texture2 = bitmap;
     }
+    @Override
+    protected BaseFilter onCopy() {
+        CameraFilterBlend filter = new CameraFilterBlend();
+        filter.setBlendTexture(texture2);
+        return filter;
+    }
 }
